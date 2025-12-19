@@ -8,7 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <main>
+    <main class="container">
+      <h1>expense tracker</h1>
+      <section class="balance-container">
+        <h2>your balance</h2>
+        <h1 id="balance">10.00</h1>
+      </section>
+      <section class="summary">
+        <section class="income">
+          <h3>income</h3>
+          <p id="income-amount">$0.00</p>
+        </section>
+        <section class="expenses">
+          <h3>income</h3>
+          <p id="expense-amount">$0.00</p>
+        </section>
+      </section>
+      <section class="main-content">
+        <section class="transaction-container">
+          <h2>transactions</h2>
+          <ul id="transaction-list"></ul>
+        </section>
+        <form>
+          <label for="description">description</label>
+          <input type="text" name="description" id="description" placeholder="Enter description..." requried>
+          <label for="amount">amount</label>
+          <input type="text" name="amount" id="amount" required>
+          <small>Use negative (-) for expense</small>
+          <button type="submit">add transaction</button>
+        </form>
+      </section>
     </main>
     <script src="./scripts/script.js"></script>
   </body>
