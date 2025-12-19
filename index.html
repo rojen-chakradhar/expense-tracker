@@ -20,7 +20,7 @@
           <p id="income-amount">$0.00</p>
         </section>
         <section class="expenses">
-          <h3>income</h3>
+          <h3>expenses</h3>
           <p id="expense-amount">$0.00</p>
         </section>
       </section>
@@ -29,14 +29,20 @@
           <h2>transactions</h2>
           <ul id="transaction-list"></ul>
         </section>
-        <form>
-          <label for="description">description</label>
-          <input type="text" name="description" id="description" placeholder="Enter description..." requried>
-          <label for="amount">amount</label>
-          <input type="text" name="amount" id="amount" required>
-          <small>Use negative (-) for expense</small>
-          <button type="submit">add transaction</button>
-        </form>
+        <section class="form-container">
+          <form id="transaction-form">
+            <div class="form-group">
+              <label for="description">description</label>
+              <input type="text" name="description" id="description" placeholder="Enter description..." requried>
+            </div>
+            <div class="form-group">
+              <label for="amount">amount</label>
+              <input type="text" name="amount" id="amount" required>
+              <small>Use negative (-) for expense</small>
+            </div>
+            <button type="submit">add transaction</button>
+          </form>
+        </section>
       </section>
     </main>
     <script src="./scripts/script.js"></script>
